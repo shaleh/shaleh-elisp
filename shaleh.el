@@ -144,4 +144,9 @@
    )
 )
 
+(defun shaleh-reverse-region (beg end)
+  "Reverse characters between BEG and END."
+  (interactive "r")
+  (insert (nreverse (delete-and-extract-region beg end))))
+
 (provide 'shaleh)
